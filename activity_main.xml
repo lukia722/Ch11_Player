@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nz.com.example.ch11_player.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnPickAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPick"
+            android:text="Audio" />
+
+        <Button
+            android:id="@+id/btnPickVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPick"
+            android:text="Video" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="File: " />
+
+    <TextView
+        android:id="@+id/txvUri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Path: " />
+
+</LinearLayout>
